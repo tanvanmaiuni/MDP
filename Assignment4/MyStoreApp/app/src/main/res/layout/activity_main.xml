@@ -55,11 +55,11 @@
 
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+                app:layout_constraintStart_toStartOf="@+id/txtUsername"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/txtUsername"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
@@ -85,25 +85,25 @@
                 android:text="Password (required)"
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+                app:layout_constraintStart_toStartOf="@+id/txtPassword"
+                app:layout_constraintTop_toBottomOf="@+id/txtUsername" />
 
             <EditText
-                android:id="@+id/editTextTextPassword"
+                android:id="@+id/txtPassword"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="30dp"
+                android:background="@drawable/et_style"
                 android:ems="10"
+                android:inputType="textPassword"
                 android:paddingStart="5dp"
                 android:paddingLeft="5dp"
                 android:paddingTop="5dp"
                 android:paddingEnd="5dp"
                 android:paddingRight="5dp"
                 android:paddingBottom="5dp"
-                android:background="@drawable/et_style"
-                android:inputType="textPassword"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView3" />
@@ -117,11 +117,11 @@
                 android:clickable="true"
                 android:text="Forgot password?"
                 android:textColor="@color/blue_wm"
-                app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+                app:layout_constraintEnd_toEndOf="@+id/txtPassword"
+                app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btnSignIn"
                 android:layout_width="0dp"
                 android:layout_height="48dp"
                 android:layout_marginStart="30dp"
