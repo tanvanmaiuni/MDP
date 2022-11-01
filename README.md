@@ -16,3 +16,44 @@
     </tr>
 </table>
 </p>
+
+<h2>Assignment 3</h2>
+<p align="center">
+<h3>TableLayout</h3>
+<table align="center" border="0">
+    <tr>
+        <td><img src="Assignment3/TableLayoutTest-Screenshot/Screenshot_20221025_205650.png" width="150" /></td>
+        <td><img src="Assignment3/TableLayoutTest-Screenshot/Screenshot_20221025_210227.png" width="150" /></td>
+        <td><img src="Assignment3/TableLayoutTest-Screenshot/Screenshot_20221025_210251.png" width="150" /></td>
+    </tr>
+</table>
+<h3>MyStoreApp</h3>
+<table align="center" border="0">
+    <tr>
+        <td><img src="Assignment3/MyStoreApp-Screenshot/Screenshot_20221030_205521.png" width="150" /></td>
+        <td><img src="Assignment3/MyStoreApp-Screenshot/Screenshot_20221030_205605.png" width="150" /></td>
+    </tr>
+</table>
+</p>
+<h2>Assignment 4</h2>
+<p align="center">
+<table align="center" border="0">
+    <tr>
+        <td><img src="Assignment4/MyStoreApp-Screenshot/Screenshot_20221031_193533.png" width="150" /></td>
+        <td><img src="Assignment4/MyStoreApp-Screenshot/Screenshot_20221031_193631.png" width="150" /></td>
+        <td><img src="Assignment4/MyStoreApp-Screenshot/Screenshot_20221031_193642.png" width="150" /></td>
+        <td><img src="Assignment4/MyStoreApp-Screenshot/Screenshot_20221031_193650.png" width="150" /></td>
+    </tr>
+    <tr>
+        <td><img src="Assignment4/MyStoreApp-Screenshot/Screenshot_20221031_193657.png" width="150" /></td>
+        <td><img src="Assignment4/MyStoreApp-Screenshot/Screenshot_20221031_194143.png" width="150" /></td>
+        <td><img src="Assignment4/MyStoreApp-Screenshot/Screenshot_20221031_194229.png" width="150" /></td>
+        <td><img src="Assignment4/MyStoreApp-Screenshot/Screenshot_20221031_194342.png" width="150" /></td>
+    </tr>
+    <tr>
+        <td><img src="Assignment4/MyStoreApp-Screenshot/Screenshot_20221031_194400.png" width="150" /></td>
+        <td><img src="Assignment4/MyStoreApp-Screenshot/Screenshot_20221031_194434.png" width="150" /></td>
+        <td><img src="Assignment4/MyStoreApp-Screenshot/Screenshot_20221031_194512.png" width="150" /></td>
+    </tr>
+</table>
+</p>
