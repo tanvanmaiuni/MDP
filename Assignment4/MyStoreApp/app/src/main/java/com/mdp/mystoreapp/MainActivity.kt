@@ -1,12 +1,14 @@
 package com.mdp.mystoreapp
 
+import android.app.Activity
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
+import android.net.Uri
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_main.txtUsername
-import kotlinx.android.synthetic.main.shoppping_activity.*
 
 class MainActivity : AppCompatActivity() {
     private val listUser = arrayListOf(
@@ -28,6 +30,47 @@ class MainActivity : AppCompatActivity() {
             }else{
                 Toast.makeText(this, "Login fail", Toast.LENGTH_LONG).show()
             }
+        }
+
+        val resultRegister =
+            registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
+                if (result.resultCode == Activity.RESULT_OK) {
+                    val newUser = result.data?.getSerializableExtra("newUser") as User
+                    if(newUser != null)
+                        listUser.add(newUser)
+                }
+            }
+        btnCreateAccount.setOnClickListener{
+            val intent = Intent(this, RegisterActivity::class.java)
+            resultRegister.launch(intent)
+        }
+
+        txtForgotPass.setOnClickListener{
+            val username = txtUsername.text.toString();
+            var foundUser = false
+            for(user in listUser){
+                if(user.username == username){
+                    sendEmail(user.username, user.password)
+                    foundUser = true
+                }
+            }
+            if(!foundUser)
+                Toast.makeText(this, "Not valid username", Toast.LENGTH_LONG).show()
+        }
+    }
+
+    private fun sendEmail(email: String, content: String) {
+        val intent = Intent(Intent.ACTION_SEND)
+        intent.data = Uri.parse("mailto:")
+        intent.type = "text/plain"
+        intent.putExtra(Intent.EXTRA_EMAIL, arrayOf(email))
+        intent.putExtra(Intent.EXTRA_SUBJECT, "Your password");
+        intent.putExtra(Intent.EXTRA_TEXT, content)
+
+        if (intent.resolveActivity(packageManager) != null) {
+            startActivity(intent)
+        } else {
+            Log.d("ImplicitIntents", "Can't handle this intent!")
         }
     }
 

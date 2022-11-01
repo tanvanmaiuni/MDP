@@ -3,15 +3,14 @@ package com.mdp.mystoreapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import kotlinx.android.synthetic.main.shoppping_activity.*
+import kotlinx.android.synthetic.main.activity_shoppping.*
 
 class ShoppingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.shoppping_activity)
-        val intent = getIntent()
+        setContentView(R.layout.activity_shoppping)
         val username = intent.getStringExtra("username")
-        txtUsername.text = username
+        txtUsername.text = "Welcome $username"
         imgElectronic.setOnClickListener{
             showMsg("Electronic")
         }

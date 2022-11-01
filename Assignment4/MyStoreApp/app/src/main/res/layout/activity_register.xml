@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="198dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/walmart_logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:text="Create your account"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/et_style"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="* required field"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="First name *"
+                android:paddingLeft="10dp"
+                android:textSize="18sp"
+
+                />
+
+            <EditText
+                android:id="@+id/txtFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/et_style"
+                android:inputType="textPersonName"
+                android:paddingStart="5dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Last name *"
+                android:paddingLeft="10dp"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/txtLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/et_style"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:paddingStart="5dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Email address *"
+                android:paddingLeft="10dp"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/et_style"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:paddingStart="5dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Password *"
+                android:paddingLeft="10dp"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/txtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/et_style"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:paddingStart="5dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="5dp" />
+
+            <Button
+                android:id="@+id/btnCreateAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/blue_wm"
+                android:text="Create Account"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
