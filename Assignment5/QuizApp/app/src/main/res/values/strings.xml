@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="question1">1. How to convert String to Int in Kotlin?</string>
+    <string name="answer1_A">toInt()</string>
+    <string name="answer1_B">toInteger()</string>
+    <string name="answer1_C">parseInt()</string>
+    <string name="answer1_correct">toInt()</string>
+
+    <string name="question2">2. What are the visibility modifiers identified in Kotlin?</string>
+    <string name="answer2_A">Public</string>
+    <string name="answer2_B">Internal</string>
+    <string name="answer2_C">Private</string>
+    <string name="answer2_D">Default</string>
+    <string name="answer2_E">Protected</string>
+    <string name="answer2_correct">Public, Internal, Private, Protected</string>
+</resources>
