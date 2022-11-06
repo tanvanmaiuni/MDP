@@ -1,9 +1,12 @@
 package com.mdp.mystoreapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_shoppping.*
+import kotlinx.android.synthetic.main.activity_shoppping.txtUsername
 
 class ShoppingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,6 +16,8 @@ class ShoppingActivity : AppCompatActivity() {
         txtUsername.text = "Welcome $username"
         imgElectronic.setOnClickListener{
             showMsg("Electronic")
+            val intent = Intent(this, ListProductActivity::class.java)
+            startActivity(intent)
         }
         imgClothing.setOnClickListener{
             showMsg("Clothing")

@@ -1,4 +1,4 @@
-package com.mdp.mystoreapp
+package com.mdp.mystoreapp.model
 
 import java.io.Serializable
 
