@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item
+        android:id="@+id/menu_linkedin"
+        android:icon="@drawable/contact_linkedin"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:title="Linked In" />
+
+    <item
+        android:id="@+id/menu_github"
+        android:icon="@drawable/contact_github"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:title="Github" />
+
+    <item
+        android:id="@+id/menu_logout"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:title="Log out" />
+</menu>

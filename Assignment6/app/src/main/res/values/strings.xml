@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CVBuilderApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="workExp"><b>Languages:</b> Java, Scala\n<b>Web:</b> JavaScript, TypeScript, HTML5, CSS3, Bootstrap\n<b>Web Services:</b> REST API, JSON, gRPC\n<b>Web/App Servers:</b> Apache/Tomcat, Nginx\n<b>Frameworks:</b> Spring Framework (Boot, Security, Data, AOP, DI, Cloud), Hibernate, Angular, React\n<b>Databases:</b> MySQL, PostgreSQL, MS SQL, NoSQL, Cassandra, MongoDB, Elasticsearch, CosmosDB\n<b>Message Queue:</b> Kafka, ActiveMQ</string>
+
+    <string name="aboutMe">Skilled software engineer with 8+ years of experience in software design and development using Agile/Scrum, Java, JavaScript, Spring, Hibernate, Angular, and React. Proven history of successful contributions to both start-ups and major companies, implementing complex distributed systems which use microservices and Cloud Native to ensure scalability and reliability.</string>
+
+    <string name="contact_email">tanmai@gmail.com</string>
+    <string name="contact_phone">+1(612)-473-4890</string>
+    <string name="contact_linkedIn">https://linkedin.com/in/tanmaijob</string>
+    <string name="contact_github">https://github.com/tanvanmaiuni</string>
+</resources>
