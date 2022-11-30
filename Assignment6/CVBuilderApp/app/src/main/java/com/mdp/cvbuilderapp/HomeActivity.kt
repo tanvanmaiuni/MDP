@@ -24,24 +24,6 @@ class HomeActivity : AppCompatActivity() {
 
         viewPager.adapter = adapter
         tabs.setupWithViewPager(viewPager)
-
-//        toolbar.setOnMenuItemClickListener{ menuItem -> {
-//            when(menuItem.itemId){
-//                R.id.menu_linkedin ->{
-//                    val intent = Intent(this, WebActivity::class.java)
-//                    intent.putExtra("url", R.string.contact_linkedIn)
-//                    startActivity(intent)
-//                    return@setOnMenuItemClickListener true
-//                }
-//                R.id.menu_logout ->{
-//                    finish()
-//                    return@setOnMenuItemClickListener true
-//                }
-//                else -> false
-//            }
-//        }}
-
-
     }
 
     @SuppressLint("RestrictedApi")
