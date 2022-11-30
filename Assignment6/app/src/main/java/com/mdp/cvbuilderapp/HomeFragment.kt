@@ -14,11 +14,6 @@ import com.mdp.cvbuilderapp.model.User
  * create an instance of this fragment.
  */
 class HomeFragment : Fragment() {
-    val user = User("Tan Mai", "image", "Software Engineer",
-        "Completed on-campus studies and currently taking distance education courses to complete Master's Degree in Computer Science (Available full-time, W-2 employment).",
-        "Language: Java, Kotlin \n Frameworks: Spring Boot, Hibernate, React"
-        )
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

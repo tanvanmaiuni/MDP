@@ -1,8 +1,7 @@
 package com.mdp.cvbuilderapp.model
 
-data class User(val name: String,
-                val image: String,
-                val title: String,
-                val careerNote: String,
-                val workExperience: String){
+import java.io.Serializable
+
+data class User(val firstname: String, val lastname: String, val username: String, val password: String):
+    Serializable {
 }
