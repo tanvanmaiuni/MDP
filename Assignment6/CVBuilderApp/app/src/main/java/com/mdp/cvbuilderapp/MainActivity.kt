@@ -29,7 +29,6 @@ class MainActivity : AppCompatActivity() {
         txtPassword.setText(pwd)
 
         btnLogin.setOnClickListener{
-            //TODO check login
             if(login(txtEmail.text.toString(), txtPassword.text.toString())){
                 val spe = spf.edit()
                 spe.putString("email", txtEmail.text.toString())
