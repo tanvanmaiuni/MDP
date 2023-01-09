@@ -9,6 +9,7 @@ class QuizViewModel : ViewModel() {
     var question = MutableLiveData<Quiz>()
 
     fun setQuestion(quiz: Quiz){
-        question.value = quiz
+        question.postValue(quiz)
     }
+
 }

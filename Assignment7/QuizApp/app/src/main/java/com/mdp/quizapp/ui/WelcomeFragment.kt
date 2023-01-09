@@ -61,12 +61,33 @@ class WelcomeFragment : BaseFragment() {
             "Elvis Operator"
         )
 
+        val quiz3 = Quiz(
+            3,
+            "3) Kotlin is developed by?",
+            "JetBrains",
+            "Google",
+            "Adobe",
+            "Microsoft",
+            "JetBrains"
+        )
+        val quiz4 = Quiz(
+            4,
+            "4) Which of following is used to handle null exceptions in Kotlin?",
+            "Elvis Operator",
+            "Range",
+            "Sealed Class",
+            "Lambda function",
+            "Elvis Operator"
+        )
+
         lifecycleScope.launch(Dispatchers.IO) {
             context?.let {
                 println("Init DB")
                 QuizDatabase(it).getQuizDao().deleteAllQuiz()
                 QuizDatabase(it).getQuizDao().addQuiz(quiz1)
                 QuizDatabase(it).getQuizDao().addQuiz(quiz2)
+                QuizDatabase(it).getQuizDao().addQuiz(quiz3)
+                QuizDatabase(it).getQuizDao().addQuiz(quiz4)
             }
         }
     }

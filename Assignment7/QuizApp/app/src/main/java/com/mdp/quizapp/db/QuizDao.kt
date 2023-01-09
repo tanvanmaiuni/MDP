@@ -13,6 +13,6 @@ interface QuizDao {
     @Insert
     fun addMultipleQuiz(vararg quiz: Quiz)
 
-    @Query("DELETE FROM QUIZ WHERE 1=1")
+    @Query("DELETE FROM QUIZ WHERE 1 = 1")
     fun deleteAllQuiz()
 }
