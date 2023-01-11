@@ -43,6 +43,11 @@ class ResultFragment : Fragment() {
             val directions = ResultFragmentDirections.actionResultFragmentToQuizFragment()
             findNavController().navigate(directions)
         }
+
+        btnResultAnalysis.setOnClickListener{
+            val directions = ResultFragmentDirections.actionResultFragmentToResultAnalysisFragment()
+            findNavController().navigate(directions)
+        }
     }
 
     fun countCorrectAns(viewModel: ResultViewModel): Int{

@@ -7,7 +7,7 @@ interface QuizDao {
     @Insert
     fun addQuiz(quiz: Quiz)
 
-    @Query("SELECT * FROM QUIZ ORDER BY id DESC")
+    @Query("SELECT * FROM QUIZ ORDER BY id ASC")
     fun getAllQuiz():List<Quiz>
 
     @Insert

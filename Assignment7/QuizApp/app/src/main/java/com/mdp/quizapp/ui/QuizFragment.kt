@@ -28,7 +28,7 @@ class QuizFragment : Fragment() {
 
     companion object {
         fun newInstance() = QuizFragment()
-        const val MAX_QUESTION = 4
+        const val MAX_QUESTION = 15
     }
 
     private lateinit var viewModel: QuizViewModel
@@ -100,7 +100,6 @@ class QuizFragment : Fragment() {
         val checkBtn = radioGroup.checkedRadioButtonId
         if (checkBtn > -1) {
             val radioButton = view?.findViewById<View>(checkBtn) as RadioButton
-            println("Selected: ${radioButton.text.toString()}")
             resultViewModel.addAnswer(radioButton.text.toString())
         }
 

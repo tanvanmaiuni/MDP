@@ -34,5 +34,13 @@
         <action
             android:id="@+id/action_resultFragment_to_quizFragment"
             app:destination="@id/quizFragment" />
+        <action
+            android:id="@+id/action_resultFragment_to_resultAnalysisFragment"
+            app:destination="@id/resultAnalysisFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/resultAnalysisFragment"
+        android:name="com.mdp.quizapp.ui.ResultAnalysisFragment"
+        android:label="fragment_result_analysis_list"
+        tools:layout="@layout/fragment_result_analysis_list" />
 </navigation>
