@@ -27,9 +27,13 @@ class ResultFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(ResultViewModel::class.java)
+//        val viewModel: ResultViewModel by navGraphViewModels(R.id.quizFragment)
+//        val loginBackStackEntry = reme { navController.getBackStackEntry("login") }
+//        findNavController().get
+
+        viewModel = ViewModelProvider(requireActivity()).get(ResultViewModel::class.java)
         // TODO: Use the ViewModel
-        val correctAns = 1
+        val correctAns = countCorrectAns(viewModel)
         txtTotalQuestion.text = "Total Question: ${QuizFragment.MAX_QUESTION}"
         txtCorrectAns.text = "Correct Answers(Score): $correctAns"
         txtWrongAns.text = "Wrong Answers:  ${QuizFragment.MAX_QUESTION - correctAns}"
@@ -39,6 +43,18 @@ class ResultFragment : Fragment() {
             val directions = ResultFragmentDirections.actionResultFragmentToQuizFragment()
             findNavController().navigate(directions)
         }
+    }
+
+    fun countCorrectAns(viewModel: ResultViewModel): Int{
+        var correctAns = 0
+        val questions = viewModel.questions
+        val answers = viewModel.answers
+        for ((index, question) in questions.withIndex()) {
+            val answer = answers[index]
+            if(question.answer == answer)
+                correctAns += 1
+        }
+        return correctAns
     }
 
 }

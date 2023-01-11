@@ -44,7 +44,7 @@ class QuizFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProvider(this).get(QuizViewModel::class.java)
-        resultViewModel = ViewModelProvider(this).get(ResultViewModel::class.java)
+        resultViewModel = ViewModelProvider(requireActivity()).get(ResultViewModel::class.java)
 
         curIndex = -1
         getQuestions()
@@ -54,8 +54,8 @@ class QuizFragment : Fragment() {
             findNavController().navigate(directions)
         }
         btnNext.setOnClickListener{
+            recordAnswer()
             if(curIndex < MAX_QUESTION - 1) {
-                recordAnswer()
                 nextQuestion()
             }else{
                 val directions = QuizFragmentDirections.actionQuizFragmentToResultFragment()
@@ -85,6 +85,8 @@ class QuizFragment : Fragment() {
             context?.let {
                 questions = QuizDatabase(it).getQuizDao().getAllQuiz()
                 nextQuestion()
+                resultViewModel.questions = questions
+                resultViewModel.answers = ArrayList()
             }
         }
     }
